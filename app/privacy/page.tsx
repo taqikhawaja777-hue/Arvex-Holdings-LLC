@@ -280,7 +280,7 @@ export default function PrivacyPolicyPage() {
               <span className="font-semibold">Phone:</span> +1 302-557-3884
             </p>
             <p>
-              <span className="font-semibold">Address:</span> 100 Luxury Ave, NY
+              <span className="font-semibold">Address:</span> 1209 Mountain Road Pl NE, Unit 11043, Albuquerque, NM 87110
             </p>
           </div>
         </section>

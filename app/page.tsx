@@ -233,11 +233,11 @@ export default function Home() {
               <div className="absolute left-6 top-6 h-full w-full rounded-3xl bg-espresso/5 blur-xl" />
               <div className="relative flex h-full min-h-[420px] items-center justify-center overflow-hidden rounded-3xl bg-white p-10 shadow-card">
                 <Image
-                  src="/images/logo n.png"
+                  src="/images/logo x.png"
                   alt="ARVEX Holdings LLC Logo"
-                  width={260}
-                  height={160}
-                  className="h-32 w-auto object-contain md:h-40"
+                  width={420}
+                  height={260}
+                  className="h-48 w-auto object-contain md:h-60"
                   priority
                 />
               </div>

@@ -16,17 +16,17 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-30 bg-black text-white shadow-md">
-      <nav className="flex h-16 w-full items-center justify-between px-4 md:px-8">
-        <Link href="/#home" className="flex h-full min-w-fit flex-shrink-0 items-center gap-2">
+      <nav className="flex h-20 w-full items-center justify-between px-4 md:px-8">
+        <Link href="/#home" className="flex h-full flex-shrink-0 items-center gap-1.5">
           <Image
-            src="/images/logo n.png"
-            alt="Arvex Holdings LLC logo"
-            width={260}
-            height={90}
+            src="/images/logo x.png"
+            alt="Company logo"
+            width={400}
+            height={120}
             priority
-            className="h-12 w-auto object-contain md:h-14"
+            className="h-16 w-14 object-cover object-left md:h-20 md:w-18"
           />
-          <span className="hidden whitespace-nowrap text-base font-medium tracking-tight md:inline md:text-lg">
+          <span className="hidden whitespace-nowrap text-xl font-semibold tracking-tight md:inline md:text-2xl">
             ARVEX Holdings LLC
           </span>
         </Link>

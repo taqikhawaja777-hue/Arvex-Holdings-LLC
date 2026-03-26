@@ -13,6 +13,15 @@ const usageTips = [
   "Avoid overheating empty cookware on high heat settings"
 ];
 
+const buildHighlights = (product: Product) =>
+  product.highlights && product.highlights.length > 0
+    ? product.highlights
+    : [
+        product.description,
+        `Ideal for ${product.category.toLowerCase()}`,
+        "Fast delivery across the U.S. with easy returns"
+      ];
+
 export default function ProductDetailPage({ params }: Props) {
   const product = getProductBySlug(params.slug);
   if (!product) return notFound();
@@ -22,6 +31,8 @@ export default function ProductDetailPage({ params }: Props) {
     .slice(0, 4);
 
   const image = product.image || productImageMap[product.title];
+  const highlights = buildHighlights(product);
+  const stripBg = product.category === "Baby Care" || product.category === "Automotives";
 
   return (
     <div className="min-h-screen bg-beige">
@@ -33,7 +44,11 @@ export default function ProductDetailPage({ params }: Props) {
 
         <div className="mt-4 overflow-hidden rounded-3xl bg-white shadow-card">
           <div className="grid gap-0 md:grid-cols-2">
-            <div className="relative h-80 w-full md:h-full bg-transparent flex items-center justify-center">
+            <div
+              className={`relative w-full overflow-hidden aspect-[4/3] md:aspect-[5/4] ${
+                stripBg ? "" : "bg-espresso/5 md:bg-white"
+              }`}
+            >
               {image ? (
                 <Image
                   src={image}
@@ -54,16 +69,14 @@ export default function ProductDetailPage({ params }: Props) {
                 <span className="text-2xl font-semibold">{product.price}</span>
                 <span className="rounded-full bg-espresso/10 px-3 py-1 text-sm font-semibold text-espresso">In Stock</span>
               </div>
-              {product.highlights?.length ? (
-                <div>
-                  <p className="font-semibold text-espresso">Key Details</p>
-                  <ul className="mt-2 list-disc space-y-1 pl-5 text-espresso/80">
-                    {product.highlights.map((tip) => (
-                      <li key={tip}>{tip}</li>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
+              <div>
+                <p className="font-semibold text-espresso">Key Details</p>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-espresso/80">
+                  {highlights.map((tip) => (
+                    <li key={tip}>{tip}</li>
+                  ))}
+                </ul>
+              </div>
               <div className="grid grid-cols-2 gap-4 text-sm text-espresso/80">
                 <div>
                   <p className="font-semibold text-espresso">Category</p>
@@ -101,8 +114,12 @@ export default function ProductDetailPage({ params }: Props) {
                   key={p.slug}
                   className="flex h-full flex-col rounded-xl bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                 >
-                  <div className="rounded-xl p-4 flex items-center justify-center">
-                    <div className="relative h-[180px] w-full">
+                  <div className="rounded-xl p-4">
+                    <div
+                      className={`relative h-[180px] w-full overflow-hidden rounded-lg ${
+                        stripBg ? "" : "bg-espresso/5"
+                      }`}
+                    >
                       {p.image || productImageMap[p.title] ? (
                         <Image
                           src={(p.image || productImageMap[p.title]) as string}

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
@@ -5,9 +6,18 @@ export function Footer() {
     <footer id="contact" className="bg-espresso text-white">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-6 py-10 md:grid-cols-4 md:px-12">
         <div className="space-y-3">
-          <div className="flex items-center gap-3">
-            <img src="/images/logo n.png" alt="Arvex logo" className="h-10 w-auto" />
-            <h3 className="font-heading text-xl">ARVEX Holdings LLC</h3>
+          <div className="flex items-center gap-2">
+            <div className="flex h-16 w-14 overflow-hidden items-center md:h-20 md:w-18">
+              <Image
+                src="/images/logo x.png"
+                alt="Arvex Holdings LLC logo"
+                width={400}
+                height={120}
+                className="h-16 w-14 object-cover object-left md:h-20 md:w-18"
+                priority
+              />
+            </div>
+            <h3 className="font-heading text-lg font-semibold text-white md:text-xl">ARVEX Holdings LLC</h3>
           </div>
           <p className="text-white/75">
             Curating a refined selection of essentials and luxuries for discerning customers across categories.
@@ -62,7 +72,15 @@ export function Footer() {
           <h4 className="font-heading text-lg mb-3">Contact</h4>
           <p className="text-white/80">Email: sales@arvexholdings.com</p>
           <p className="text-white/80">Phone: +1 302-557-3884</p>
-          <p className="text-white/80">Address: 100 Luxury Ave, NY</p>
+          <p className="text-white/80 leading-snug">
+            Address:
+            <br />
+            1209 Mountain Road Pl NE
+            <br />
+            Unit 11043
+            <br />
+            Albuquerque, NM 87110
+          </p>
         </div>
       </div>
       <div className="border-t border-white/10 bg-espresso/95">
