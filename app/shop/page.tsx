@@ -1,10 +1,10 @@
- "use client";
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { products as allProducts, productImageMap } from "./productData";
 
@@ -22,8 +22,7 @@ const filters = [
 
 const shopProducts = allProducts;
 
-
-export default function ShopPage() {
+function ShopPageContent() {
   const searchParams = useSearchParams();
   const initialFilter = useMemo(() => {
     const param = searchParams?.get("category");
@@ -121,5 +120,19 @@ export default function ShopPage() {
       </main>
       <Footer />
     </div>
+  );
+}
+
+export default function ShopPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-beige flex items-center justify-center text-espresso/70">
+          Loading shop...
+        </div>
+      }
+    >
+      <ShopPageContent />
+    </Suspense>
   );
 }
