@@ -84,8 +84,7 @@ const imageMap: Record<string, string | undefined> = {
   "Office File Cabinet": "/images/officefilecabinet.webp",
   "Conference Room Speaker": "/images/microphoneforconforencerrom.webp",
   "Cable Management Tray": "/images/cabelmanagementtray.webp",
-  "Whiteboard with Accessories": "/images/whiteboardwithaccessories.webp",
-  "Pet Water Fountain": "/images/petwaterfountain.webp"
+  "Whiteboard with Accessories": "/images/whiteboardwithaccessories.webp"
 };
 
 export type Product = {
