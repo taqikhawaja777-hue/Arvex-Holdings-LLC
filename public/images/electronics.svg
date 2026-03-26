@@ -1,0 +1,13 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dfe7f5"/>
+      <stop offset="100%" stop-color="#c9a66b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g2)"/>
+  <rect x="200" y="170" width="360" height="240" rx="28" fill="#3b2f2f" fill-opacity="0.85"/>
+  <rect x="230" y="200" width="300" height="180" rx="12" fill="#f5f1ec" fill-opacity="0.95"/>
+  <circle cx="380" cy="420" r="10" fill="#c9a66b"/>
+  <text x="380" y="320" font-family="Inter, sans-serif" font-size="40" text-anchor="middle" fill="#3b2f2f">Electronics</text>
+</svg>

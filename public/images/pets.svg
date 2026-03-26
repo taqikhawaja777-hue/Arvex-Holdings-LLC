@@ -1,0 +1,14 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8e9d2"/>
+      <stop offset="100%" stop-color="#c9a66b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g3)"/>
+  <circle cx="260" cy="240" r="70" fill="#3b2f2f" fill-opacity="0.8"/>
+  <circle cx="340" cy="200" r="55" fill="#3b2f2f" fill-opacity="0.7"/>
+  <circle cx="420" cy="240" r="75" fill="#3b2f2f" fill-opacity="0.8"/>
+  <rect x="260" y="280" width="220" height="120" rx="60" fill="#3b2f2f" fill-opacity="0.85"/>
+  <text x="370" y="360" font-family="Georgia, serif" font-size="42" text-anchor="middle" fill="#f5f1ec">Pet</text>
+</svg>

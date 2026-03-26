@@ -1,0 +1,13 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5efe4"/>
+      <stop offset="100%" stop-color="#c9a66b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g4)"/>
+  <polygon points="200,320 400,160 600,320 600,460 200,460" fill="#3b2f2f" fill-opacity="0.85"/>
+  <rect x="320" y="340" width="80" height="120" fill="#f5f1ec"/>
+  <rect x="440" y="360" width="80" height="60" fill="#f5f1ec" fill-opacity="0.85"/>
+  <text x="400" y="520" font-family="Inter, sans-serif" font-size="40" text-anchor="middle" fill="#3b2f2f">Home &amp; Kitchen</text>
+</svg>

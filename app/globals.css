@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background: theme("colors.beige");
+  color: theme("colors.espresso");
+  font-family: theme("fontFamily.body");
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  @apply transition-colors duration-200;
+}
+
+.gold-underline {
+  position: relative;
+}
+
+.gold-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 100%;
+  background-color: theme("colors.gold");
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms ease;
+}
+
+.gold-underline:hover::after,
+.gold-underline:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.overlay-gradient {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.marquee {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  animation: marquee 18s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.tilt-card {
+  transform-style: preserve-3d;
+  transition: transform 280ms ease, box-shadow 280ms ease;
+}
+
+.tilt-card:hover {
+  transform: translateY(-4px) rotateX(2deg) rotateY(-2deg) scale(1.01);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);
+}
