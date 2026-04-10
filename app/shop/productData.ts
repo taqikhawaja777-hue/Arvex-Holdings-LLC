@@ -43,7 +43,7 @@ const imageMap: Record<string, string | undefined> = {
   "Waterproof Mascara": "/images/Waterproof Mascara.webp",
   "Velvet Matte Lipstick Duo": "/images/Velvet Matte Lipstick Duo.webp",
   "Makeup Organizer Bag": "/images/Makeup Organizer Bag.webp",
-  "Facial Cleansing Brush": "/images/makeupbrushset.webp", // no dedicated file; fallback to brushes
+  "Facial Cleansing Brush": "/images/Facial Cleansing Brush.jpg",
   "Dry Shampoo Spray": "/images/Dry Shampoo Spray.webp",
   "Heat Protectant Hair Spray": "/images/Heat Protectant Hair Spray.webp",
   "Detangling Hair Serum": "/images/Detangling Hair Serum.avif", // .webp not available
