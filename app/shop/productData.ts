@@ -38,15 +38,15 @@ const imageMap: Record<string, string | undefined> = {
   "Shower Head Filter": "/images/showerheadfilter.webp",
   "Face Steamer": "/images/facesteamer.webp",
   "Hydrating Sheet Mask (5-Pack)": "/images/Hydrating Sheet Mask (5-Pack).webp",
-  "Vitamin C Glow Serum": "/images/Vitamin C Glow Serum.jpg",
+  "Vitamin C Glow Serum": "/images/Vitamin C Glow Serum.jpg", // .webp not available; uses provided .jpg
   "Moisturizing Face Cream": "/images/Moisturizing Face Cream.webp",
   "Waterproof Mascara": "/images/Waterproof Mascara.webp",
   "Velvet Matte Lipstick Duo": "/images/Velvet Matte Lipstick Duo.webp",
   "Makeup Organizer Bag": "/images/Makeup Organizer Bag.webp",
-  "Facial Cleansing Brush": "/images/beauty-products.jpg",
+  "Facial Cleansing Brush": "/images/makeupbrushset.webp", // no dedicated file; fallback to brushes
   "Dry Shampoo Spray": "/images/Dry Shampoo Spray.webp",
   "Heat Protectant Hair Spray": "/images/Heat Protectant Hair Spray.webp",
-  "Detangling Hair Serum": "/images/Detangling Hair Serum.avif",
+  "Detangling Hair Serum": "/images/Detangling Hair Serum.avif", // .webp not available
   "Car Wipes Interior Cleaning Wipes": "/images/carvipes.webp",
   "Microfiber Cleaning Cloths (6-Pack)": "/images/microfibrecleaningcloth.webp",
   "Stainless Steel Car Wash Nozzle": "/images/stainlesssteelshower.webp",
