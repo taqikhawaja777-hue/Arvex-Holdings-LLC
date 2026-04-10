@@ -2,9 +2,9 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 const businessHours = [
-  "Monday - Friday: 9:00 AM - 5:00 PM EST",
-  "Saturday: 10:00 AM - 2:00 PM EST",
-  "Sunday: Closed"
+  "Available 24/7 for all customers.",
+  "Email responses typically within 24 hours.",
+  "Phone support every day."
 ];
 
 export default function ContactPage() {

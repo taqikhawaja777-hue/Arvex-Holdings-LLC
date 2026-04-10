@@ -192,7 +192,7 @@ export default function TermsPage() {
 
         <div className="mx-auto w-full max-w-4xl overflow-hidden rounded-2xl shadow-card">
           <Image
-            src="/images/writing.webp"
+            src="/images/Writing.webp"
             alt="Person signing a document"
             width={1200}
             height={540}
